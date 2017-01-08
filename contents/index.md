@@ -1,3 +1,3 @@
 ---
-layout: layout.pug
+layout: index.pug
 ---

@@ -11,7 +11,7 @@ var siteBuild = metalsmith(__dirname)
   .destination('./build')
   .use(markdown())
   .use(metadata({
-    events: 'events.yaml'
+    events: 'events.json'
   }))
   .use(layouts({
     engine: 'pug'
