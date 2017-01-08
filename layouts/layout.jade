@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title!= title
+  body
+    div.container
+      table
+        thead
+          tr
+            th Name
+            th Location
+        tbody
+        each event, index in events
+          tr
+            td= event.name
+            td= event.location.name
