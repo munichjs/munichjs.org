@@ -4,8 +4,8 @@
   "description": "MunichJS JavaScript User Group Munich",
   "main": "index.js",
   "scripts": {
-    "start": "node build.js",
-    "build": "NODE_ENV=production node build.js",
+    "start": "gulp & node build.js",
+    "build": "gulp & NODE_ENV=production node build.js",
     "clean": "rm -rf build"
   },
   "repository": {
@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/munichjs/munichjs.org#readme",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0",
     "metalsmith": "^2.3.0",
     "metalsmith-assets": "^0.1.0",
     "metalsmith-browser-sync": "^1.1.1",
