@@ -14,7 +14,7 @@ var siteBuild = metalsmith(__dirname)
     events: 'events.yaml'
   }))
   .use(layouts({
-    engine: 'jade'
+    engine: 'pug'
   }))
   .build(function (err) {
     if (err) {

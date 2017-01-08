@@ -1,3 +1,3 @@
 ---
-layout: layout.jade
+layout: layout.pug
 ---
