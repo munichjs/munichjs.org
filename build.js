@@ -39,7 +39,11 @@ var ms = metalsmith(__dirname)
 if(devBuild) ms
   .use(browsersync({
     server  : './build',
-    files   : ['./contents/**/*.md', './layouts/**/*.pug']
+    files   : [
+      './contents/**/*.md',
+      './layouts/**/*.pug',
+      './assets/**/*.css'
+    ]
   }))
 
 ms.build(function (err) {

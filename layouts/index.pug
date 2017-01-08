@@ -1,17 +1,37 @@
 doctype html
-html
+html(lang="en")
   head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    meta(name="description",content="")
+    meta(name="author",content="")
     title!= title
     link(rel='stylesheet', href='main.css')
-  body
-    div.container
-      table
+  block body
+    .container
+      .header.clearfix
+        nav
+          ul.nav.nav-pills.float-right
+            li.nav-item(role='presentation')
+              a.nav-link.active(href='#') Home
+            li.nav-item(role='presentation')
+              a.nav-link(href='#') Past Events
+            li.nav-item(role='presentation')
+              a.nav-link(href='#') Speakers
+        h3.text-muted!= title
+      table.table.table-hover.table-responsive
         thead
           tr
             th Name
+            th Date
             th Location
         tbody
         each event, index in events
           tr
             td= event.name
+            td= event.date
             td= event.location.name
+      footer.footer
+        p © Company 2014
+      block content
